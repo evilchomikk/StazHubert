@@ -1,0 +1,268 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "org.example.generator.manager.filemanager.FileManager#read(FileType,Class,String)",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "BothDirections" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "org.example.generator.manager.filemanager.FileManager",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_2052603225 { 
+   	label=Main
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Main1526836320XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="Main
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_331531087 { 
+   	label=generator
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_1009077215 { 
+   	label=ExcelReader
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ExcelReader596294229XXXread1602839392[
+	label="+ read()"
+	style=filled
+	fillcolor=white
+	tooltip="ExcelReader
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1010236881 { 
+   	label=YamlReader
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   YamlReader851093321XXXread1602839392[
+	label="+ read()"
+	style=filled
+	fillcolor=white
+	tooltip="YamlReader
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_122187850 { 
+   	label=FileManager
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   FileManager250475847XXXread28772013[
+	label="+ read()"
+	style=filled
+	fillcolor=white
+	tooltip="FileManager
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1503148543 { 
+   	label=CsvReader
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   CsvReader803849948XXXread1602839392[
+	label="+ read()"
+	style=filled
+	fillcolor=white
+	tooltip="CsvReader
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1543484721 { 
+   	label=JsonReader
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   JsonReader850663818XXXread1602839392[
+	label="+ read()"
+	style=filled
+	fillcolor=white
+	tooltip="JsonReader
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1802066911 { 
+   	label=XmlReader
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   XmlReader803829963XXXread1602839392[
+	label="+ read()"
+	style=filled
+	fillcolor=white
+	tooltip="XmlReader
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1914125934 { 
+   	label=Converter
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Converter2035287132XXXstringToType719217960[
+	label="+ stringToType()"
+	style=filled
+	fillcolor=white
+	tooltip="Converter
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_288944262 { 
+   	label=FileReader
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   FileReader250475847XXXchooseReader28772013[
+	label="+ chooseReader()"
+	style=filled
+	fillcolor=white
+	tooltip="FileReader
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+} 
+
+'edges    
+CsvReader803849948XXXread1602839392 -> Converter2035287132XXXstringToType719217960;
+ExcelReader596294229XXXread1602839392 -> Converter2035287132XXXstringToType719217960;
+FileManager250475847XXXread28772013 -> FileReader250475847XXXchooseReader28772013;
+FileReader250475847XXXchooseReader28772013 -> CsvReader803849948XXXread1602839392;
+FileReader250475847XXXchooseReader28772013 -> ExcelReader596294229XXXread1602839392;
+FileReader250475847XXXchooseReader28772013 -> JsonReader850663818XXXread1602839392;
+FileReader250475847XXXchooseReader28772013 -> XmlReader803829963XXXread1602839392;
+FileReader250475847XXXchooseReader28772013 -> YamlReader851093321XXXread1602839392;
+Main1526836320XXXmain1859653459 -> FileManager250475847XXXread28772013;
+XmlReader803829963XXXread1602839392 -> Converter2035287132XXXstringToType719217960;
+    
+}
+@enduml

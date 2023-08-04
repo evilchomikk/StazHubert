@@ -1,0 +1,336 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "BothDirections" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "org.example.generator.manager.filemanager.FileManager",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Main1526836320[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Main</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+subgraph cluster_331531087 { 
+   	label=generator
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Converter2035287132[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Converter</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ stringToType(value: String, fieldType: Class&lt;?&gt;): Object</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CsvGenerator803849948[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CsvGenerator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   SPLITTER: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ generate(targetLoc: String, classFields: ClassFields, generatorData: GeneratorData)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getColTitles(csvData: GeneratorData, classFields: ClassFields, writer: BufferedWriter)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getRowValues(csvData: GeneratorData, classFields: ClassFields, writer: BufferedWriter)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CsvReader803849948[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CsvReader</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   SPLITTER: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ read(clazz: Class, sourceLoc: String, classFields: ClassFields): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ExcelGenerator596294229[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ExcelGenerator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   FILETYPE: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ fieldToCellType(field: Field): CellType</TD></TR>
+<TR><TD ALIGN="LEFT" >+ generate(targetLoc: String, classFields: ClassFields, generatorData: GeneratorData)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getColTitles(sheet: HSSFSheet, rows: List&lt;HSSFRow&gt;, classFields: ClassFields, data: GeneratorData)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getRowValues(sheet: HSSFSheet, rows: List&lt;HSSFRow&gt;, classFields: ClassFields, data: GeneratorData)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ExcelReader596294229[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ExcelReader</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   FILETYPE: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ read(clazz: Class, sourceLoc: String, classFields: ClassFields): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FileGenerator250475847[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FileGenerator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ chooseGenerator(type: FileType, list: List, targetLock: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FileManager250475847[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FileManager</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ generate(type: FileType, list: List, targetLock: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ read(type: FileType, clazz: Class, sourceLock: String): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FileReader250475847[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FileReader</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ chooseReader(type: FileType, clazz: Class, sourceLock: String): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GeneratorData1538492109[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GeneratorData</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   listOfObjects: List&lt;?&gt; [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sortValues(classFields: ClassFields)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+JsonGenerator850663818[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)JsonGenerator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ generate(targetLoc: String, classFields: ClassFields, generatorData: GeneratorData)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+JsonReader850663818[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)JsonReader</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ read(clazz: Class, sourceLoc: String, classFields: ClassFields): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+XmlGenerator803829963[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)XmlGenerator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ generate(targetLoc: String, classFields: ClassFields, generatorData: GeneratorData)</TD></TR>
+<TR><TD ALIGN="LEFT" >- writeXml(doc: Document, targetLock: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+XmlReader803829963[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)XmlReader</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ read(clazz: Class, sourceLoc: String, classFields: ClassFields): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+YamlGenerator851093321[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)YamlGenerator</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ generate(targetLoc: String, classFields: ClassFields, generatorData: GeneratorData)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+YamlReader851093321[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)YamlReader</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ read(clazz: Class, sourceLoc: String, classFields: ClassFields): List</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+CsvGenerator803849948 -> ExcelGenerator596294229[arrowhead=none];
+CsvGenerator803849948 -> JsonGenerator850663818[arrowhead=none];
+CsvGenerator803849948 -> XmlGenerator803829963[arrowhead=none];
+CsvGenerator803849948 -> YamlGenerator851093321[arrowhead=none];
+CsvReader803849948 -> Converter2035287132[label="read() -> stringToType()"];
+ExcelReader596294229 -> Converter2035287132[label="read() -> stringToType()"];
+ExcelReader596294229 -> JsonReader850663818[arrowhead=none];
+ExcelReader596294229 -> XmlReader803829963[arrowhead=none];
+ExcelReader596294229 -> YamlReader851093321[arrowhead=none];
+FileGenerator250475847 -> CsvGenerator803849948[label="chooseGenerator() -> generate()"];
+FileGenerator250475847 -> ExcelGenerator596294229[label="chooseGenerator() -> generate()"];
+FileGenerator250475847 -> GeneratorData1538492109[label="chooseGenerator() -> sortValues()"];
+FileGenerator250475847 -> JsonGenerator850663818[label="chooseGenerator() -> generate()"];
+FileGenerator250475847 -> XmlGenerator803829963[label="chooseGenerator() -> generate()"];
+FileGenerator250475847 -> YamlGenerator851093321[label="chooseGenerator() -> generate()"];
+FileManager250475847 -> FileGenerator250475847[label="generate() -> chooseGenerator()"];
+FileManager250475847 -> FileReader250475847[label="read() -> chooseReader()"];
+FileReader250475847 -> CsvReader803849948[label="chooseReader() -> read()"];
+FileReader250475847 -> ExcelReader596294229[label="chooseReader() -> read()"];
+FileReader250475847 -> JsonReader850663818[label="chooseReader() -> read()"];
+FileReader250475847 -> XmlReader803829963[label="chooseReader() -> read()"];
+FileReader250475847 -> YamlReader851093321[label="chooseReader() -> read()"];
+XmlReader803829963 -> Converter2035287132[label="read() -> stringToType()"];
+    
+}
+@enduml

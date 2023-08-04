@@ -1,22 +1,14 @@
-package org.example.generator.manager.filemanagers.yaml;
+package org.example.generator.manager.formats.yaml;
 
-import org.example.Main;
 import org.example.annotations.DateFormat;
 import org.example.annotations.IgnoreField;
 import org.example.annotations.IgnoreInnerLists;
 import org.example.annotations.NullsEquals;
 import org.example.generator.data.ClassFields;
 import org.example.generator.data.GeneratorData;
-import org.example.generator.helpers.AnnoitationCheck;
 import org.example.generator.manager.interfaces.Generator;
-import org.example.testclasses.Employee;
 import org.yaml.snakeyaml.DumperOptions;
-import org.yaml.snakeyaml.*;
-import org.yaml.snakeyaml.constructor.Constructor;
-import org.yaml.snakeyaml.nodes.Node;
-import org.yaml.snakeyaml.nodes.NodeId;
-import org.yaml.snakeyaml.nodes.Tag;
-import org.yaml.snakeyaml.representer.Representer;
+import org.yaml.snakeyaml.Yaml;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

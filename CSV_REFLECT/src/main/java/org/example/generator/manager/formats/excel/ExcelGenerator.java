@@ -1,4 +1,4 @@
-package org.example.generator.manager.filemanagers.excel;
+package org.example.generator.manager.formats.excel;
 
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;

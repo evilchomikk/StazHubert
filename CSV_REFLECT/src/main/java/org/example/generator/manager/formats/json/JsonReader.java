@@ -1,4 +1,4 @@
-package org.example.generator.manager.filemanagers.json;
+package org.example.generator.manager.formats.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.generator.data.ClassFields;

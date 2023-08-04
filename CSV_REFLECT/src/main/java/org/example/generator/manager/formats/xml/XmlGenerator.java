@@ -1,4 +1,4 @@
-package org.example.generator.manager.filemanagers.xml;
+package org.example.generator.manager.formats.xml;
 
 import org.example.annotations.DateFormat;
 import org.example.annotations.IgnoreField;

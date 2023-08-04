@@ -1,4 +1,4 @@
-package org.example.generator.manager.filemanagers.csv;
+package org.example.generator.manager.formats.csv;
 
 import org.example.generator.data.ClassFields;
 import org.example.generator.helpers.Converter;

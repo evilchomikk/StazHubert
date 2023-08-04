@@ -2,11 +2,11 @@ package org.example.generator.manager.filemanager;
 
 import org.example.generator.data.ClassFields;
 import org.example.generator.data.FileType;
-import org.example.generator.manager.filemanagers.csv.CsvReader;
-import org.example.generator.manager.filemanagers.excel.ExcelReader;
-import org.example.generator.manager.filemanagers.json.JsonReader;
-import org.example.generator.manager.filemanagers.xml.XmlReader;
-import org.example.generator.manager.filemanagers.yaml.YamlReader;
+import org.example.generator.manager.formats.csv.CsvReader;
+import org.example.generator.manager.formats.excel.ExcelReader;
+import org.example.generator.manager.formats.json.JsonReader;
+import org.example.generator.manager.formats.xml.XmlReader;
+import org.example.generator.manager.formats.yaml.YamlReader;
 
 import java.util.List;
 

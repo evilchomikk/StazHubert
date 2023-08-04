@@ -7,7 +7,10 @@ import org.example.testclasses.Cat;
 import org.example.testclasses.Employee;
 
 import java.time.LocalDate;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class Main {
@@ -31,8 +34,13 @@ public class Main {
                 new Cat(false,"Niewiem", 3,"Green")
         );
 
+
+
+
+
+
         FileManager generator = new FileManager();
-        generator.generate(FileType.YAML,listOfEmployee,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2");
+        generator.generate(FileType.JSON,listOfEmployee,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2");
        // System.out.println( generator.read(FileType.YAML,Employee.class,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2"));
     }
 }

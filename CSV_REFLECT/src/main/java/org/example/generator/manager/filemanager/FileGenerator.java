@@ -4,11 +4,11 @@ package org.example.generator.manager.filemanager;
 import org.example.generator.data.ClassFields;
 import org.example.generator.data.FileType;
 import org.example.generator.data.GeneratorData;
-import org.example.generator.manager.filemanagers.csv.CsvGenerator;
-import org.example.generator.manager.filemanagers.excel.ExcelGenerator;
-import org.example.generator.manager.filemanagers.json.JsonGenerator;
-import org.example.generator.manager.filemanagers.xml.XmlGenerator;
-import org.example.generator.manager.filemanagers.yaml.YamlGenerator;
+import org.example.generator.manager.formats.csv.CsvGenerator;
+import org.example.generator.manager.formats.excel.ExcelGenerator;
+import org.example.generator.manager.formats.json.JsonGenerator;
+import org.example.generator.manager.formats.xml.XmlGenerator;
+import org.example.generator.manager.formats.yaml.YamlGenerator;
 
 import java.util.List;
 

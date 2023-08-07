@@ -1,0 +1,3 @@
+Nie działa odczyt xml json i yaml przez to ze probuje uzyc róznych bibliotek a jedna inaczej zapisuja i inaczej odczytuja
+robie to tak zeby brało moje adnotacje pod uwage , mogł bym  uzyc mappera z jsona
+i by wszostko działłao ale wtedy nie bedzie moich adnotacji

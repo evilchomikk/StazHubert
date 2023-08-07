@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc236e61-6e96-4348-ae1b-92391fdbb147" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/annotations/Column.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/annotations/SortBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/data/ClassFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/data/FileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/data/GeneratorData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/helpers/Converter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/interfaces/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/interfaces/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/jacksonModules/ColumnModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/jacksonModules/DontGenerateModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/jacksonModules/NullsEqualsModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/KomentarzDlaFilipa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DateFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DontGenerate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/IgnoreField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/IgnoreInnerLists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/NullsEquals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/SortBy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/ClassFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/FileType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/GeneratorData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/helpers/Converter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/csv/CsvGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/csv/CsvReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/excel/ExcelGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/excel/ExcelReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/json/JsonGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/json/JsonReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/xml/XmlGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/xml/XmlReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/yaml/YamlGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/yaml/YamlReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/interfaces/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/interfaces/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Living.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/test/java/CoverterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/test/java/test123.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/xd.csv" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="kom" />
+                    <option name="lastUsedInstant" value="1691403054" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1691401749" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Daty" />
+                    <option name="lastUsedInstant" value="1691401748" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TeNKpVZR8sdSv5HEgscIsXdu1I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "kom",
+    "last_opened_file_path": "C:/Users/kulkah/Desktop/StazHubert/FileGenerator_v2/src/main/java/org/example"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kulkah\Desktop\StazHubert\FileGenerator_v2\src\main\java\org\example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.annotations" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="FileGenerator_v2." />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc236e61-6e96-4348-ae1b-92391fdbb147" name="Changes" comment="" />
+      <created>1691399526746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691399526746</updated>
+    </task>
+    <servers />
+  </component>
+</project>

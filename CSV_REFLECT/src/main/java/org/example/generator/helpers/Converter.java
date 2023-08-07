@@ -28,12 +28,4 @@ public class Converter {
 
     }
 
-    public List<Object> convertStringToList(String employeeData) {
-        List<Object> list = new ArrayList<>();
-        String[] spliterators = employeeData.split(",");
-        for (String s : spliterators) {
-            list.add(s);
-        }
-        return list;
-    }
 }

@@ -5,59 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc236e61-6e96-4348-ae1b-92391fdbb147" name="Changes" comment="prosze dzialaj">
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/ListSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/objectmappers/ObjectMapperGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/providers/FileGeneratorProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/providers/FileReaderProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/jacksonModules/DateFormatModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/jacksonModules/DontGenerateModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/jacksonModules/IgnoreListsModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/jacksonModules/NullsEqualsModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/PoiGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/annotations/IgnoreLists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/jacksonModules/IgnoreListsModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DateFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DontGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DontGenerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/IgnoreField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/NullsEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/NullsEquals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/SortBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/SortBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/ClassFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/ClassFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/FileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/FileType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/GeneratorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/data/GeneratorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/helpers/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/helpers/FileFieldConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/filemanager/FileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/csv/CsvGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/csv/CsvGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/csv/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/csv/CsvReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/excel/ExcelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/excel/ExcelGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/excel/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/excel/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/json/JsonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/json/JsonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/json/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/json/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/xml/XmlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/xml/XmlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/xml/XmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/xml/XmlReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/yaml/YamlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/yaml/YamlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/yaml/YamlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/formats/yaml/YamlReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/interfaces/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/interfaces/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/interfaces/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/generator/manager/interfaces/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/testclasses/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/test/java/CoverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/test/java/CoverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/data/ClassFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/data/ClassFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/filemanager/FileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/helpers/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/helpers/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/interfaces/Generator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/interfaces/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/testclasses/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/src/main/java/org/example/testclasses/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSV_REFLECT/.idea/git_toolbox_prj.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

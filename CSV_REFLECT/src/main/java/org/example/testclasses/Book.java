@@ -2,8 +2,8 @@ package org.example.testclasses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import org.checkerframework.checker.units.qual.A;
+import org.example.annotations.DontGenerate;
+import org.example.annotations.SortBy;
 
 @Data
 @AllArgsConstructor

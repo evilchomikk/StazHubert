@@ -18,8 +18,6 @@ public class Main {
 
         );
 
-
-
         List<Animal> listOfAnimals = List.of(
                 new Cat(true,"Pies", 4, "Black"),
                 new Cat(true,"Kangur", 2,"Blue"),
@@ -29,8 +27,12 @@ public class Main {
         );
 
 
+
+
+
+
         FileManager fileManager = new FileManager();
-        fileManager.generate(FileType.XML, listOfAnimals, "C:\\Users\\kulkah\\Desktop\\pliki\\test");
-        fileManager.read(FileType.XML, Cat.class, "C:\\Users\\kulkah\\Desktop\\pliki\\test");
+        fileManager.generate(FileType.YAML, listOfEmployee, "C:\\Users\\kulkah\\Desktop\\pliki\\test");
+        System.out.println(fileManager.read(FileType.YAML, Cat.class, "C:\\Users\\kulkah\\Desktop\\pliki\\test"));
     }
 }

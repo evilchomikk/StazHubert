@@ -37,11 +37,21 @@ public class Converter {
             }catch (Exception e1){
                 if(value.equals("true")||value.equals("false"))
                     return Boolean.parseBoolean(value);
-                else
+                else if(value.contains(",")){
+                    stringToList(value);
+                }else{
                     return String.valueOf(value);
+                }
 
             }
         }
+        return String.valueOf(value);
+    }
+
+    public Object stringToList(String value){
+        String[] spliterators = value.split(",");
+        List list = new ArrayList<>(Arrays.asList(spliterators));
+        return list;
     }
 
 }

@@ -1,4 +1,4 @@
-import org.example.generator.helpers.Converter;
+import org.example.generator.helpers.FileFieldConverter;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -6,10 +6,10 @@ import org.junit.Test;
 import java.util.List;
 
 public class CoverterTest {
-    Converter converter;
+    FileFieldConverter converter;
     @Before
     public void setUp() throws Exception {
-        converter =new Converter();
+        converter =new FileFieldConverter();
     }
 
     @Test

@@ -1,20 +1,19 @@
 package org.example.generator.manager.formats.csv;
 
 import org.example.generator.data.ClassFields;
-import org.example.generator.helpers.Converter;
+import org.example.generator.helpers.FileFieldConverter;
+import org.example.generator.manager.interfaces.Reader;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsvReader {
-    private final String SPLITTER = "; ";
+public class CsvReader implements Reader {
+    private final String SPLITTER = ";";
 
-
-    public List read(Class clazz, String sourceLoc, ClassFields classFields) throws IOException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    @Override
+    public List read(Class clazz, String sourceLoc, ClassFields classFields) throws Exception {
 
         java.io.FileReader scan = new java.io.FileReader(sourceLoc + ".csv");
         BufferedReader reader = new BufferedReader(scan);
@@ -22,7 +21,7 @@ public class CsvReader {
 
         List<Object> newObjectsList = new ArrayList<>();
         Constructor<?>[] constructor = clazz.getConstructors();
-        Converter converter = new Converter();
+        FileFieldConverter converter = new FileFieldConverter();
 
         while ((line = reader.readLine()) != null) {
             String[] splitedLine = line.split(SPLITTER);

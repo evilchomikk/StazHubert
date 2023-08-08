@@ -62,5 +62,10 @@
             <version>2.13.0
             </version> <!-- Replace with the latest version available -->
         </dependency>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.7.1</version> <!-- Use the latest version -->
+        </dependency>
     </dependencies>
 </project>

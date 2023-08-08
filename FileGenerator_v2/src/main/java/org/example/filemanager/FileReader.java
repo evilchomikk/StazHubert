@@ -45,6 +45,8 @@ public class FileReader {
         mapper.registerModule(new JavaTimeModule());
         mapper.registerModule(new org.example.jacksonModules.DontGenerateModule());
         mapper.registerModule(new org.example.jacksonModules.NullsEqualsModule());
+        mapper.registerModule(new org.example.jacksonModules.ColumnModule());
+        mapper.registerModule(new org.example.jacksonModules.IgnoreListsModule());
         mapper.disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
 
         List<Object> objects = mapper.readValue(Paths.get(sourceLock+fileType).toFile(), new TypeReference<>() {
@@ -59,14 +61,15 @@ public class FileReader {
             List<Object> values =new ArrayList<>();
 
             map.values().forEach(value -> values.add(converter.stringToType(value.toString())));
+
+            System.out.println(values);
+            System.out.println(Arrays.toString(constructor[0].getParameterTypes()));
+
             object = constructor[0].newInstance(values.toArray());
             objectsFromFile.add(object);
         }
 
 
-
-
-        System.out.println();
         return objectsFromFile;
 
 

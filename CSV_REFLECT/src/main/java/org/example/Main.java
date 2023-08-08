@@ -15,13 +15,7 @@ import java.util.Map;
 
 
 public class Main {
-    public List<Book> listOfBooks = List.of(
-            new Book("Pan Tadeusz", "Adam Mickiewicz", 1834),
-            new Book("W pustyni i w puszczy", "Henryk Sienkiewicz", 1911),
-            new Book("Krzyżacy", "Henryk Sienkiewicz", 1900),
-            new Book("Dziady", "Adam Mickiewicz", 1823),
-            new Book("Lalka", "Bolesław Prus", 1890)
-    );
+
     public static void main(String[] args) throws Exception {
         System.out.println("Hello world!");
 
@@ -32,7 +26,13 @@ public class Main {
 
         );
 
-
+         List<Book> listOfBooks = List.of(
+                new Book("Pan Tadeusz", "Adam Mickiewicz", 1834),
+                new Book("W pustyni i w puszczy", "Henryk Sienkiewicz", 1911),
+                new Book("Krzyżacy", "Henryk Sienkiewicz", 1900),
+                new Book("Dziady", "Adam Mickiewicz", 1823),
+                new Book("Lalka", "Bolesław Prus", 1890)
+        );
 
         List<Animal> listOfAnimals = List.of(
                 new Cat(true,"Pies", 4, "Black"),
@@ -43,14 +43,8 @@ public class Main {
         );
 
 
-
-
-
-
-
-
         FileManager generator = new FileManager();
-        generator.generate(FileType.XML,listOfAnimals,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2");
-        System.out.println( generator.read(FileType.XML,Book.class,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2"));
+        generator.generate(FileType.JSON,listOfEmployee,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2");
+        System.out.println( generator.read(FileType.JSON,Employee.class,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2"));
     }
 }

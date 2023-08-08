@@ -34,10 +34,7 @@ public class ClassFields {
         while (!superClassFieldsStack.isEmpty()) {
             classFields.add(superClassFieldsStack.pop());
         }
-
-
         classFields.addAll(List.of(clazz.getDeclaredFields()));
-
         return classFields;
 
     }

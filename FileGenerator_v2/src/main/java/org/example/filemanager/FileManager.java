@@ -15,6 +15,7 @@ public class FileManager {
                 new FileGenerator().generate(type, list, targetLock);
         } else {
             System.out.println("Nie udało sie wygenerowac pliku: Lista jest pusta");
+
         }
     }
 

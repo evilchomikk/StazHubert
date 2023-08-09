@@ -1,43 +1,45 @@
 package org.example.generator.data;
 
+import lombok.Getter;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Stack;
 
+@Getter
 public class ClassFields {
 
-    final private List<Field> listOfClassFields;
-
+    private final List<Field> listOfClassFields;
     public ClassFields(Class clazz) {
-        listOfClassFields = getFields(clazz);
+        listOfClassFields = getListOfClassFields(clazz);
     }
 
-    public List<Field> getListOfClassFields() {
-        return listOfClassFields;
+    private List<Field> getListOfClassFields(Class clazz) {
+        return getListOfClassFields(getListOfSuperClasses(clazz));
     }
 
-    private List<Field> getFields(Class clazz) {
-
-        List<Field> classFields = new ArrayList<>();
-        Stack<Field> superClassFieldsStack = new Stack<>();
-        Class supeClass = clazz.getSuperclass();
-
-        while (supeClass != Object.class) {
-            List<Field> superClassFields = new ArrayList<>(List.of(supeClass.getDeclaredFields()));
-            Collections.reverse(superClassFields);
-            superClassFields.forEach(superClassFieldsStack::push);
-            supeClass = supeClass.getSuperclass();
+    private List<Class> getListOfSuperClasses(Class clazz){
+        List<Class> listOfSuperClasses = new ArrayList<>();
+        Class superClass = clazz.getSuperclass();
+        while(superClass != Object.class){
+            listOfSuperClasses.add(superClass);
+            superClass = superClass.getSuperclass();
         }
+        Collections.reverse(listOfSuperClasses);
+        listOfSuperClasses.add(clazz);
 
-        // classFields.addAll(new ArrayList<>(superClassFieldsStack));
-        while (!superClassFieldsStack.isEmpty()) {
-            classFields.add(superClassFieldsStack.pop());
+        return listOfSuperClasses;
+    }
+
+    private List<Field> getListOfClassFields(List<Class> listOfClasses){
+        List<Field> listOfFields = new ArrayList<>();
+        for(Class clazz : listOfClasses){
+            List<Field> superClassesFields = new ArrayList<>(List.of(clazz.getDeclaredFields()));
+            listOfFields.addAll(superClassesFields);
+            Collections.reverse(superClassesFields);
         }
+        return listOfFields;
 
-        classFields.addAll(List.of(clazz.getDeclaredFields()));
-
-        return classFields;
     }
 }

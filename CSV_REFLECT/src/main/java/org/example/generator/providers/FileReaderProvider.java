@@ -10,28 +10,26 @@ import org.example.generator.manager.interfaces.Reader;
 
 public class FileReaderProvider {
 
-    public Reader chooseReader(FileType type) throws Exception {
-        try {
-            switch (type) {
-                case CSV -> {
-                    return new CsvReader();
-                }
-                case EXCEL -> {
-                    return new ExcelReader();
-                }
-                case JSON -> {
-                    return new JsonReader();
-                }
-                case XML -> {
-                    return new XmlReader();
-                }
-                case YAML -> {
-                    new YamlReader();
-                }
+    public Reader chooseReader(FileType type) {
+
+        switch (type) {
+            case CSV -> {
+                return new CsvReader();
             }
-        } catch (Exception e) {
-            System.out.println("Nie obsługiwany Typ");
+            case EXCEL -> {
+                return new ExcelReader();
+            }
+            case JSON -> {
+                return new JsonReader();
+            }
+            case XML -> {
+                return new XmlReader();
+            }
+            case YAML -> {
+                return new YamlReader();
+            }
+            default ->
+                    throw new IllegalStateException("Unexpected value: " + type);
         }
-        return null;
     }
 }

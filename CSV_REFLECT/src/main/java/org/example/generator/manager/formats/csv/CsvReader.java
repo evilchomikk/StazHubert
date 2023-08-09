@@ -11,12 +11,12 @@ import java.util.List;
 
 public class CsvReader implements Reader {
 
-    private final String SPLITTER = ";";
-
     @Override
     public List read(Class clazz, String sourceLoc, ClassFields classFields) throws Exception {
+        final String SPLITTER = ";";
+        final String FILETYPE = ".csv";
 
-        java.io.FileReader scan = new java.io.FileReader(sourceLoc + ".csv");
+        java.io.FileReader scan = new java.io.FileReader(sourceLoc + FILETYPE);
         BufferedReader reader = new BufferedReader(scan);
         var line = reader.readLine();//omija 1 linie
 

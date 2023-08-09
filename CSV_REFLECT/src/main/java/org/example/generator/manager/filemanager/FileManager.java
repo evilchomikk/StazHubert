@@ -6,7 +6,7 @@ import org.example.generator.data.FileType;
 
 import java.util.List;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public class FileManager {
 
     private static FileManager instance;

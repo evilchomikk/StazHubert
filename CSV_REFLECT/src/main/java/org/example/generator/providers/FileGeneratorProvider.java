@@ -11,27 +11,25 @@ import org.example.generator.manager.interfaces.Generator;
 public class FileGeneratorProvider {
 
     public Generator chooseGenerator(FileType type) {
-        try {
-            switch (type) {
-                case CSV -> {
-                    return new CsvGenerator();
-                }
-                case EXCEL -> {
-                    return new ExcelGenerator();
-                }
-                case JSON -> {
-                    return new JsonGenerator();
-                }
-                case XML -> {
-                    return new XmlGenerator();
-                }
-                case YAML -> {
-                    return new YamlGenerator();
-                }
+
+        switch (type) {
+            case CSV -> {
+                return new CsvGenerator();
             }
-        } catch (Exception e) {
-            System.out.println("Nie obsługiwany Typ");
+            case EXCEL -> {
+                return new ExcelGenerator();
+            }
+            case JSON -> {
+                return new JsonGenerator();
+            }
+            case XML -> {
+                return new XmlGenerator();
+            }
+            case YAML -> {
+                return new YamlGenerator();
+            }
+            default ->
+                    throw new IllegalStateException("Unexpected value: " + type);
         }
-        return null;
     }
 }

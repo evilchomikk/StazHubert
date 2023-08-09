@@ -21,7 +21,7 @@ public class FileReader {
         return instance;
     }
 
-    public FileReader(Class clazz, String sourceLocation) {
+    private FileReader(Class clazz, String sourceLocation) {
         this.classFields = new ClassFields(clazz);
         this.sourceLocation = sourceLocation;
         this.clazz = clazz;

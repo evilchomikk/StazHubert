@@ -6,20 +6,19 @@ import org.example.generator.data.ClassFields;
 import org.example.generator.helpers.FileFieldConverter;
 import org.example.generator.manager.interfaces.Reader;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ExcelReader implements Reader {
-    private final String FILETYPE = ".xlsx";
 
     @Override
-    public List read(Class clazz, String sourceLoc, ClassFields classFields) throws IOException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        FileInputStream file = new FileInputStream(new File(sourceLoc + FILETYPE));
+    public List read(Class clazz, String sourceLoc, ClassFields classFields) throws IOException {
+        final String FILETYPE = ".xlsx";
+
+        FileInputStream file = new FileInputStream(sourceLoc + FILETYPE);
         Constructor<?>[] constructor = clazz.getConstructors();
         List<Object> newObjectsList = new ArrayList<>();
 

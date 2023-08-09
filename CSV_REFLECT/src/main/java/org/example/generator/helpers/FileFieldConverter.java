@@ -1,10 +1,7 @@
 package org.example.generator.helpers;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Locale;
+import java.time.*;
+import java.util.*;
 
 public class FileFieldConverter {
 
@@ -32,22 +29,22 @@ public class FileFieldConverter {
         }
         return null;
     }
-    public Object stringToType(String value){
+
+    public Object stringToType(String value) {
         try {
             return Integer.parseInt(value);
-        }catch (Exception e){
+        } catch (Exception e) {
             try {
                 return Double.parseDouble(value);
-            }catch (Exception e1){
-                try{
+            } catch (Exception e1) {
+                try {
                     return LocalDate.parse(value);
-                }catch (Exception e2){
-                    if(value.contains(",")) {
+                } catch (Exception e2) {
+                    if (value.contains(",")) {
                         return stringToList(value);
-                    }
-                    else if(value.equals("true")||value.equals("false")){
-                            return Boolean.parseBoolean(value);
-                    }else{
+                    } else if (value.equals("true") || value.equals("false")) {
+                        return Boolean.parseBoolean(value);
+                    } else {
                         return String.valueOf(value);
                     }
                 }
@@ -56,7 +53,7 @@ public class FileFieldConverter {
         }
     }
 
-    public Object stringToList(String value){
+    public Object stringToList(String value) {
         String[] spliterators = value.split(",");
         List<String> list = new ArrayList<String>(List.of(spliterators));
         return list;

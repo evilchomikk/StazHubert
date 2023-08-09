@@ -16,7 +16,6 @@ public class Employee {
 
     private String name;
     @NullsEquals(nullValue = "0")
-    @SortBy
     private Integer id;
     List<String> role;
     @DateFormat(dateFormat = "yyyy-MM-dd")

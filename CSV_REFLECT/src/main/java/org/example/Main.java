@@ -1,17 +1,11 @@
 package org.example;
 
-import org.example.generator.data.FileType;
-import org.example.generator.manager.filemanager.FileManager;
-import org.example.testclasses.Animal;
-import org.example.testclasses.Book;
-import org.example.testclasses.Cat;
-import org.example.testclasses.Employee;
+import org.example.generator.data.*;
+import org.example.generator.manager.filemanager.*;
+import org.example.testclasses.*;
 
-import java.time.LocalDate;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.*;
+import java.util.*;
 
 
 public class Main {
@@ -43,8 +37,7 @@ public class Main {
         );
 
 
-        FileManager generator = new FileManager();
-        generator.generate(FileType.JSON,listOfEmployee,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2");
-        System.out.println( generator.read(FileType.JSON,Employee.class,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa2"));
+        FileManager.getInstance().generate(FileType.EXCEL,listOfEmployee,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa");
+        System.out.println( FileManager.getInstance().read(FileType.EXCEL,Employee.class,"C:\\Users\\kulkah\\Desktop\\pliki\\jakasnazwa"));
     }
 }

@@ -5,33 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71efe02e-553d-49e8-bef1-769ca1088be5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/annotations/DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/DateFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/annotations/DontGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/DontGenerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/annotations/IgnoreInnerLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/IgnoreInnerLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/annotations/NullsEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/NullsEquals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/annotations/SortBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/SortBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KomentarzDlaFilipa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/data/ClassFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/data/ClassFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/data/ListSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/data/ListSorterUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/helpers/FileFieldConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/helpers/FileFieldConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/FileGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/objectmappers/ObjectMapperGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/objectmappers/ObjectMapperGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/csv/CsvGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/csv/CsvGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/csv/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/csv/CsvReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/excel/ExcelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/excel/ExcelGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/excel/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/excel/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/json/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/json/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/xml/XmlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/xml/XmlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/xml/XmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/xml/XmlReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/yaml/YamlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/yaml/YamlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/yaml/YamlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/formats/yaml/YamlReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/interfaces/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/interfaces/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/interfaces/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/manager/interfaces/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/providers/FileGeneratorProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/providers/FileGeneratorProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/providers/FileReaderProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/providers/FileReaderProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/DateFormatModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/DateFormatModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/DontGenerateModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/DontGenerateModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/IgnoreListsModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/IgnoreListsModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/NullsEqualsModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jacksonModules/NullsEqualsModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testclasses/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testclasses/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testclasses/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testclasses/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CoverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CoverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test123.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test123.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/data/ClassFields.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/data/ClassFields.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/data/ListSorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/helpers/FileFieldConverter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/helpers/FileFieldConverter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/helpers/FileFieldConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/helpers/FileFieldConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/FileGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/FileGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/objectmappers/ObjectMapperGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/objectmappers/ObjectMapperGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/filemanager/objectmappers/ObjectMapperReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/formats/csv/CsvGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/formats/csv/CsvGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/formats/csv/CsvReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/formats/csv/CsvReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/manager/formats/excel/ExcelGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/manager/formats/excel/ExcelGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/providers/FileGeneratorProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/providers/FileGeneratorProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/generator/providers/FileReaderProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/generator/providers/FileReaderProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DateFormatModule$DateFormatBeanPropertyWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DateFormatModule$DateFormatBeanPropertyWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DateFormatModule$DateFormatSerializerModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DateFormatModule$DateFormatSerializerModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DateFormatModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DateFormatModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DontGenerateModule$DontGenerateSerializerModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DontGenerateModule$DontGenerateSerializerModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DontGenerateModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/DontGenerateModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/IgnoreListsModule$IgnoreListsSerializerModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/IgnoreListsModule$IgnoreListsSerializerModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/IgnoreListsModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/IgnoreListsModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/NullsEqualsModule$NullEqualsBeanPropertyWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/NullsEqualsModule$NullEqualsBeanPropertyWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/NullsEqualsModule$NullEqualsSerializerModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/NullsEqualsModule$NullEqualsSerializerModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/NullsEqualsModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/jacksonModules/NullsEqualsModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/testclasses/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/testclasses/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileGenerator_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FileGenerator_v2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,6 +104,9 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -82,8 +119,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "kom",
-    "last_opened_file_path": "C:/Users/kulkah/Desktop/StazHubert/CSV_REFLECT/src/main/java/org/example"
+    "last_opened_file_path": "C:/Users/kulkah/Desktop/StazHubert/CSV_REFLECT/src/main/java/org/example",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -110,5 +153,20 @@
       <updated>1691476667082</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc236e61-6e96-4348-ae1b-92391fdbb147" name="Changes" comment="prosze dzialaj">
+      <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DateFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DontGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/DontGenerate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/IgnoreInnerLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSV_REFLECT/src/main/java/org/example/annotations/IgnoreInnerLists.java" afterDir="false" />

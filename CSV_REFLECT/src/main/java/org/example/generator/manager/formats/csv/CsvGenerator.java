@@ -25,23 +25,17 @@ public class CsvGenerator implements Generator {
         csvData = generatorData;
         csvClassFields = classFields;
 
-        FileWriter fileWriter = new FileWriter(targetLocation + FILETYPE);
-        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
-        writeColumnHeaders(bufferedWriter);
-        writeRowValues(bufferedWriter);
-
-        bufferedWriter.close();
-        fileWriter.close();
+        try (FileWriter fileWriter = new FileWriter(targetLocation + FILETYPE);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+            writeColumnHeaders(bufferedWriter);
+            writeRowValues(bufferedWriter);
+        }
     }
 
     public void writeColumnHeaders(BufferedWriter writer) throws IOException {
         StringBuilder columnHeader = new StringBuilder();
 
-        csvClassFields.getListOfClassFields().forEach(field -> {
-            if (isWritable(field))
-                columnHeader.append(field.getName()).append(SPLITTER);
-        });
+        csvClassFields.getListOfClassFields().forEach(field -> addFieldNameToHeader(columnHeader, field));
 
         columnHeader.setLength(columnHeader.length() - 1);
         columnHeader.append("\r");
@@ -51,10 +45,7 @@ public class CsvGenerator implements Generator {
     }
 
     public void writeRowValues(BufferedWriter writer) {
-
-        csvData.getListOfObjects().forEach(obj -> {
-            writeRowFields(obj, writer);
-        });
+        csvData.getListOfObjects().forEach(obj -> writeRowFields(obj, writer));
     }
 
     public void writeRowFields(Object obj, BufferedWriter writer) {
@@ -85,6 +76,11 @@ public class CsvGenerator implements Generator {
             throw new RuntimeException(e);
         }
         System.out.println(stringBuilder);
+    }
+
+    private void addFieldNameToHeader(StringBuilder columnHeader, Field field) {
+        if (isWritable(field))
+            columnHeader.append(field.getName()).append(SPLITTER);
     }
 
     private Object getFieldValue(Field field, Object obj) throws IllegalAccessException {

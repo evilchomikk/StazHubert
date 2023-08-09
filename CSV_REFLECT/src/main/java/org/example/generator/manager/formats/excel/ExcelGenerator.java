@@ -1,10 +1,14 @@
 package org.example.generator.manager.formats.excel;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.CellType;
-import org.example.annotations.*;
+import org.example.annotations.DateFormat;
+import org.example.annotations.DontGenerate;
+import org.example.annotations.IgnoreInnerLists;
+import org.example.annotations.NullsEquals;
 import org.example.generator.data.ClassFields;
 import org.example.generator.data.GeneratorData;
 import org.example.generator.manager.interfaces.Generator;
@@ -20,7 +24,6 @@ import java.util.List;
 
 public class ExcelGenerator implements Generator {
 
-    private final String FILETYPE = ".xlsx";
     private GeneratorData excelData;
     private ClassFields excelClassFields;
 
@@ -28,33 +31,34 @@ public class ExcelGenerator implements Generator {
     public void generate(String targetLocation, ClassFields classFields, GeneratorData generatorData) throws IOException {
         excelData = generatorData;
         excelClassFields = classFields;
+        final String FILETYPE = ".xlsx";
+
         List<HSSFRow> rows = new ArrayList<>();
 
-        HSSFWorkbook wb = new HSSFWorkbook();
-        HSSFSheet sheet = wb.createSheet("Sheet 1");
-        OutputStream fileOut = new FileOutputStream(targetLocation + FILETYPE);
-
-        getColTitles(sheet, rows);
-        getRowValues(sheet, rows);
-
-        wb.write(fileOut);
-        fileOut.close();
-        wb.close();
+        try (HSSFWorkbook wb = new HSSFWorkbook();
+             OutputStream fileOut = new FileOutputStream(targetLocation + FILETYPE)) {
+            HSSFSheet sheet = wb.createSheet("Sheet 1");
+            writeColumnHeaders(sheet, rows);
+            writeRowValues(sheet, rows);
+            wb.write(fileOut);
+        }
     }
 
-    public void getColTitles(HSSFSheet sheet, List<HSSFRow> rows) throws IOException {
-        final int[] colIndex = {0};
+    private void writeColumnHeaders(HSSFSheet sheet, List<HSSFRow> rows) {
+        int columnIndex = 0;
         rows.add(sheet.createRow(0));
-        excelClassFields.getListOfClassFields().forEach(field -> {
-            if (isWritable(field)) {
-                rows.get(0).createCell(colIndex[0]);
-                rows.get(0).getCell(colIndex[0]).setCellValue(field.getName());
-                colIndex[0]++;
-            }
-        });
+        for (Field field : excelClassFields.getListOfClassFields()) {
+            writeColumnHeaderToRow(rows.get(0), field, columnIndex);
+            columnIndex++;
+        }
     }
 
-    public void getRowValues(HSSFSheet sheet, List<HSSFRow> rows) {
+    private void writeColumnHeaderToRow(HSSFRow row, Field field, int columnIndex) {
+        HSSFCell cell = row.createCell(columnIndex);
+        cell.setCellValue(field.getName());
+    }
+
+    private void writeRowValues(HSSFSheet sheet, List<HSSFRow> rows) {
 
         final int[] rowIndex = {1};
         excelData.getListOfObjects().forEach(obj -> {

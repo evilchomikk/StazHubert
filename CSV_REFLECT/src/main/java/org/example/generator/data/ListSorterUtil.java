@@ -6,17 +6,9 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListSorter {
+public class ListSorterUtil {
 
-    private List<?> listOfObjects;
-    private ClassFields classFields;
-
-    public ListSorter(List<?> listOfObjects, ClassFields classFields) {
-        this.listOfObjects = listOfObjects;
-        this.classFields = classFields;
-    }
-
-    public List<Object> sortValues() {
+    public static List<Object> sortValues(List<?> listOfObjects, ClassFields classFields) {
         if (listOfObjects.isEmpty()) {
             return null;
         }
@@ -24,10 +16,10 @@ public class ListSorter {
         Field sortByField = classFields.getListOfClassFields().stream()
                 .filter(field -> field.isAnnotationPresent(SortBy.class))
                 .findFirst()
-                .orElse(classFields.getListOfClassFields().get(0));
+                .orElse(null);
 
         if (sortByField == null) {
-            return null;
+            return (List<Object>) listOfObjects;
         }
 
         sortByField.setAccessible(true);
@@ -39,7 +31,7 @@ public class ListSorter {
         return mutableList;
     }
 
-    private int compareObjects(Object o1, Object o2, Field sortByField) {
+    private static int compareObjects(Object o1, Object o2, Field sortByField) {
         try {
             Object fieldValue1 = sortByField.get(o1);
             Object fieldValue2 = sortByField.get(o2);

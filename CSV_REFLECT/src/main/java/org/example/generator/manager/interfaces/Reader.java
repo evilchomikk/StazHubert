@@ -8,5 +8,4 @@ public interface Reader {
 
     List read(Class clazz, String sourceLoc, ClassFields classFields)
             throws Exception;
-
 }

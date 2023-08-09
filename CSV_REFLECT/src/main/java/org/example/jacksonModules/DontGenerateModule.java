@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DontGenerateModule extends SimpleModule {
+
     @Override
     public void setupModule(SetupContext context) {
         super.setupModule(context);

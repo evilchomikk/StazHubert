@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IgnoreListsModule extends SimpleModule {
+
     @Override
     public void setupModule(SetupContext context) {
         super.setupModule(context);
@@ -36,10 +37,7 @@ public class IgnoreListsModule extends SimpleModule {
                     filteredProperties.add(writer);
                 }
             }
-
             return filteredProperties;
         }
     }
-
-
 }

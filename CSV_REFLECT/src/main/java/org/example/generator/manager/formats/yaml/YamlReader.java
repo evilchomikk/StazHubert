@@ -16,4 +16,3 @@ public class YamlReader implements Reader {
         return new ObjectMapperReader(new YAMLMapper()).read(clazz, sourceLocation, FILETYPE);
     }
 }
-

@@ -118,4 +118,3 @@ public class ExcelGenerator implements Generator {
         return fieldValue;
     }
 }
-

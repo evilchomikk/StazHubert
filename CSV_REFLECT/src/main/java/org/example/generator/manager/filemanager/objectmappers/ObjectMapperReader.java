@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ObjectMapperReader {
+
     List<Object> objectsFromFile = new ArrayList<>();
     ObjectMapper mapper;
 

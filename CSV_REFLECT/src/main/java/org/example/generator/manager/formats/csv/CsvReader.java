@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CsvReader implements Reader {
+
     private final String SPLITTER = ";";
 
     @Override

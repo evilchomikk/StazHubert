@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DateFormatModule extends SimpleModule {
+
     @Override
     public void setupModule(SetupContext context) {
         super.setupModule(context);
@@ -70,5 +71,4 @@ public class DateFormatModule extends SimpleModule {
             }
         }
     }
-
 }

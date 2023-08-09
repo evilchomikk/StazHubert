@@ -1,13 +1,17 @@
 package org.example.generator.manager.filemanager.objectmappers;
 
-import com.fasterxml.jackson.core.type.*;
-import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.datatype.jsr310.*;
-import org.example.generator.helpers.*;
 
-import java.lang.reflect.*;
-import java.nio.file.*;
-import java.util.*;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.example.generator.helpers.FileFieldConverter;
+
+import java.lang.reflect.Constructor;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class ObjectMapperReader {
 

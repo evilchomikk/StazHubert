@@ -1,12 +1,15 @@
 package org.example;
 
-import org.example.generator.data.*;
-import org.example.generator.manager.filemanager.*;
-import org.example.testclasses.*;
 
-import java.time.*;
-import java.util.*;
+import org.example.generator.data.FileType;
+import org.example.generator.manager.filemanager.FileManager;
+import org.example.testclasses.Animal;
+import org.example.testclasses.Book;
+import org.example.testclasses.Cat;
+import org.example.testclasses.Employee;
 
+import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
 

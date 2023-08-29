@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="mysql">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+    <option name="updateChangeLogPath" value="src/main/resources/liquiBase/changelog.xml" />
+    <option name="updateDbConnectionName" value="129cef17-d66b-4504-b1b2-6e5427be927e" />
+  </component>
+</project>

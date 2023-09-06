@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.role.service;
 
 import com.example.SpringStart.tables.role.mapper.RoleMapper;
-import com.example.SpringStart.tables.role.model.RoleDTO;
+import com.example.SpringStart.commons.dto.role.RoleDTO;
 import com.example.SpringStart.tables.role.repository.RoleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

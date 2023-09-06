@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.historyofchange.mapper;
 
 import com.example.SpringStart.tables.historyofchange.model.HistoryOfChange;
-import com.example.SpringStart.tables.historyofchange.model.HistoryOfChangeDTO;
+import com.example.SpringStart.commons.dto.historyofchange.HistoryOfChangeDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

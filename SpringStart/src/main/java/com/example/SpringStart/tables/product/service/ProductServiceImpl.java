@@ -2,7 +2,7 @@ package com.example.SpringStart.tables.product.service;
 
 import com.example.SpringStart.tables.product.mapper.ProductMapper;
 import com.example.SpringStart.tables.product.model.Product;
-import com.example.SpringStart.tables.product.model.ProductDTO;
+import com.example.SpringStart.commons.dto.product.ProductDTO;
 import com.example.SpringStart.tables.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.envers.AuditReader;

@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.customer.controller;
 
-import com.example.SpringStart.tables.customer.model.CustomerDTO;
+import com.example.SpringStart.commons.dto.customer.CustomerDTO;
 import com.example.SpringStart.tables.customer.helpers.CustomerToLoginData;
 import com.example.SpringStart.tables.customer.service.CustomerService;
 import lombok.RequiredArgsConstructor;

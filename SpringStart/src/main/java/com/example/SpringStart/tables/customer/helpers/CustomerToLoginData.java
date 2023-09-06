@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.customer.helpers;
 
-import com.example.SpringStart.tables.customer.model.CustomerDTO;
-import com.example.SpringStart.tables.logindata.model.LoginDataDTO;
+import com.example.SpringStart.commons.dto.customer.CustomerDTO;
+import com.example.SpringStart.commons.dto.logindata.LoginDataDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

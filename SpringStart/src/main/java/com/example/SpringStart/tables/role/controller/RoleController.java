@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.role.controller;
 
-import com.example.SpringStart.tables.role.model.RoleDTO;
+import com.example.SpringStart.commons.dto.role.RoleDTO;
 import com.example.SpringStart.tables.role.service.RoleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

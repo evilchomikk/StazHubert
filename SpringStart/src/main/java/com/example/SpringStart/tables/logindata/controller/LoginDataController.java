@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.logindata.controller;
 
-import com.example.SpringStart.tables.logindata.model.LoginDataDTO;
+import com.example.SpringStart.commons.dto.logindata.LoginDataDTO;
 import com.example.SpringStart.tables.logindata.service.LoginDataService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

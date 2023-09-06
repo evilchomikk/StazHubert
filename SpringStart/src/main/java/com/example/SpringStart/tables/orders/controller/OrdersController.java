@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.orders.controller;
 
-import com.example.SpringStart.tables.orders.model.OrdersDTO;
+import com.example.SpringStart.commons.dto.orders.OrdersDTO;
 import com.example.SpringStart.tables.orders.service.OrdersService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.cart.controller;
 
-import com.example.SpringStart.tables.cart.model.CartDTO;
+import com.example.SpringStart.commons.dto.cart.CartDTO;
 import com.example.SpringStart.tables.cart.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

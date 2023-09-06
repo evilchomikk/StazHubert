@@ -2,7 +2,7 @@ package com.example.SpringStart.tables.employee.service;
 
 import com.example.SpringStart.tables.employee.repository.EmployeeRepository;
 import com.example.SpringStart.tables.employee.mapper.EmployeeMapper;
-import com.example.SpringStart.tables.employee.model.EmployeeDTO;
+import com.example.SpringStart.commons.dto.employee.EmployeeDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

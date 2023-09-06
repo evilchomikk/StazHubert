@@ -3,7 +3,7 @@ package com.example.SpringStart.tables.logindata.service;
 import com.example.SpringStart.tables.logindata.repository.LoginDataRepository;
 import com.example.SpringStart.tables.logindata.mapper.LoginDataMapper;
 import com.example.SpringStart.tables.logindata.model.LoginData;
-import com.example.SpringStart.tables.logindata.model.LoginDataDTO;
+import com.example.SpringStart.commons.dto.logindata.LoginDataDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

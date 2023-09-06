@@ -2,7 +2,7 @@ package com.example.SpringStart.tables.historyofchange.service;
 
 import com.example.SpringStart.tables.historyofchange.repository.HistoryOfChangeRepository;
 import com.example.SpringStart.tables.historyofchange.mapper.HistoryOfChangeMapper;
-import com.example.SpringStart.tables.historyofchange.model.HistoryOfChangeDTO;
+import com.example.SpringStart.commons.dto.historyofchange.HistoryOfChangeDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

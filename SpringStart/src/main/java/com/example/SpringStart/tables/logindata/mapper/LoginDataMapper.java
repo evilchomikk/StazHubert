@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.logindata.mapper;
 
 import com.example.SpringStart.tables.logindata.model.LoginData;
-import com.example.SpringStart.tables.logindata.model.LoginDataDTO;
+import com.example.SpringStart.commons.dto.logindata.LoginDataDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.role.service;
 
-import com.example.SpringStart.tables.role.model.RoleDTO;
+import com.example.SpringStart.commons.dto.role.RoleDTO;
 
 import java.util.List;
 

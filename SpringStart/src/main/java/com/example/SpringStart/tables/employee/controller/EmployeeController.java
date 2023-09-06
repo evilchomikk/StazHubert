@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.employee.controller;
 
-import com.example.SpringStart.tables.employee.model.EmployeeDTO;
+import com.example.SpringStart.commons.dto.employee.EmployeeDTO;
 import com.example.SpringStart.tables.employee.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.address.mapper;
 
 import com.example.SpringStart.tables.address.model.Address;
-import com.example.SpringStart.tables.address.model.AddressDTO;
+import com.example.SpringStart.commons.dto.address.AddressDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

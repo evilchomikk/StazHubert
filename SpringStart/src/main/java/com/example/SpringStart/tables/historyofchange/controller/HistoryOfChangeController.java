@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.historyofchange.controller;
 
-import com.example.SpringStart.tables.historyofchange.model.HistoryOfChangeDTO;
+import com.example.SpringStart.commons.dto.historyofchange.HistoryOfChangeDTO;
 import com.example.SpringStart.tables.historyofchange.service.HistoryOfChangeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

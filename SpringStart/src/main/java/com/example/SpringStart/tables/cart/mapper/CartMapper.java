@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.cart.mapper;
 
 import com.example.SpringStart.tables.cart.model.Cart;
-import com.example.SpringStart.tables.cart.model.CartDTO;
+import com.example.SpringStart.commons.dto.cart.CartDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

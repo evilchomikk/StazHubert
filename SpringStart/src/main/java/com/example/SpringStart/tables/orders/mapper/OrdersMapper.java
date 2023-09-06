@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.orders.mapper;
 
 import com.example.SpringStart.tables.orders.model.Orders;
-import com.example.SpringStart.tables.orders.model.OrdersDTO;
+import com.example.SpringStart.commons.dto.orders.OrdersDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

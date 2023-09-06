@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.employee.service;
 
-import com.example.SpringStart.tables.employee.model.EmployeeDTO;
+import com.example.SpringStart.commons.dto.employee.EmployeeDTO;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.role.mapper;
 
 import com.example.SpringStart.tables.role.model.Role;
-import com.example.SpringStart.tables.role.model.RoleDTO;
+import com.example.SpringStart.commons.dto.role.RoleDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

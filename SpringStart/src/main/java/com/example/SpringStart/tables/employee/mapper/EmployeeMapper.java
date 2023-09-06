@@ -1,7 +1,7 @@
 package com.example.SpringStart.tables.employee.mapper;
 
 import com.example.SpringStart.tables.employee.model.Employee;
-import com.example.SpringStart.tables.employee.model.EmployeeDTO;
+import com.example.SpringStart.commons.dto.employee.EmployeeDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

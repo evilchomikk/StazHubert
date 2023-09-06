@@ -2,7 +2,7 @@ package com.example.SpringStart.tables.orders.service;
 
 import com.example.SpringStart.tables.orders.repository.OrdersRepository;
 import com.example.SpringStart.tables.orders.mapper.OrdersMapper;
-import com.example.SpringStart.tables.orders.model.OrdersDTO;
+import com.example.SpringStart.commons.dto.orders.OrdersDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.product.service;
 
-import com.example.SpringStart.tables.product.model.ProductDTO;
+import com.example.SpringStart.commons.dto.product.ProductDTO;
 
 import java.util.List;
 

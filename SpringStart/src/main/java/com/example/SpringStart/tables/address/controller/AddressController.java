@@ -1,6 +1,6 @@
 package com.example.SpringStart.tables.address.controller;
 
-import com.example.SpringStart.tables.address.model.AddressDTO;
+import com.example.SpringStart.commons.dto.address.AddressDTO;
 import com.example.SpringStart.tables.address.service.AddressService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

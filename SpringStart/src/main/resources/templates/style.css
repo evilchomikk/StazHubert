@@ -1,0 +1,29 @@
+p{
+ color: red;
+}
+
+#square{
+    width: 60%;
+    height: 1020PX;
+    background-color: white;
+    margin-left: 20%;
+    /*margin-right: 20%;*/
+    border-radius: 20px;
+    border-style: double;
+}
+
+h1{
+    width: 100%;
+    height: 5%;
+    margin-top: 3%;
+    background-color: rgb(115, 185, 75);
+    text-align: center;
+}
+
+body{
+    background: radial-gradient( rgb(22, 182, 245) 0%, rgba(9,9,121,1) 65%, rgb(25, 2, 78) 100%);
+}
+
+.getform{
+    float: left;
+}

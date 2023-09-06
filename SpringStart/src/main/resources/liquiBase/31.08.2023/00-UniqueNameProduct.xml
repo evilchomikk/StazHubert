@@ -1,0 +1,10 @@
+<!--liquibase formatted xml-->
+<!--changeset kulkah:1-->
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet author="kulkah" id="1">
+        <addUniqueConstraint tableName="product" columnNames="name"/>
+    </changeSet>
+</databaseChangeLog>

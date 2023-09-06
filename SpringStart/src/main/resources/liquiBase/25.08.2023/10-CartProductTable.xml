@@ -1,0 +1,28 @@
+<!--liquibase formatted xml-->
+<!--changeset kulkah:1-->
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet author="kulkah" id="1">
+        <createTable tableName="cart_product">
+
+            <column name="id_cart" type="int">
+                <constraints primaryKey="true"
+                             nullable="false"
+                             foreignKeyName="FK_cart_product_cart"
+                             references="cart(id)"/>
+            </column>
+            <column name="id_product" type="int">
+                <constraints primaryKey="true"
+                             nullable="false"
+                             foreignKeyName="FK_cart_product_product"
+                             references="product(id)"/>
+            </column>
+            <column name="ammount" type="int">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

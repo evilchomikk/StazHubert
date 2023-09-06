@@ -1,5 +1,6 @@
 package com.example.SpringStart.tables.customer.userDetails;
 
+import com.example.SpringStart.commons.dto.customer.CustomerDTO;
 import com.example.SpringStart.tables.customer.model.Customer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -12,7 +13,7 @@ import java.util.Collections;
 @RequiredArgsConstructor
 public class CustomerUserDetails implements UserDetails {
 
-    private final Customer customer;
+    private final CustomerDTO customer;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

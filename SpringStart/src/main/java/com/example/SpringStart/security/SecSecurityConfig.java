@@ -1,8 +1,11 @@
 package com.example.SpringStart.security;
 
+import com.example.SpringStart.commons.dto.customer.CustomerDTO;
 import com.example.SpringStart.tables.customer.repository.CustomerRepository;
 import com.example.SpringStart.tables.customer.model.Customer;
+import com.example.SpringStart.tables.customer.service.CustomerService;
 import com.example.SpringStart.tables.customer.userDetails.CustomerUserDetails;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,17 +27,19 @@ import java.util.List;
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
+@RequiredArgsConstructor
 public class SecSecurityConfig {
-    @Autowired
-    private CustomerRepository customerRepository;
+
+
+    private final CustomerService customerService;
 
     @Bean
     public UserDetailsService userDetailsService() {
 
-        List<Customer> customers = customerRepository.findAll();
+        List<CustomerDTO> customers = customerService.getCustomers();
         List<UserDetails> userDetailsList = new ArrayList<>();
 
-        for (Customer customer : customers) {
+        for (CustomerDTO customer : customers) {
             customer.getLoginData().setPassword(new BCryptPasswordEncoder().encode(customer.getLoginData().getPassword()));
             userDetailsList.add(new CustomerUserDetails(customer));
         }
